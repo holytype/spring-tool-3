@@ -24,4 +24,9 @@ hs_err_pid*
 replay_pid*
 
 #
-*.properties
+.metadata/
+Servers/
+target/
+*.class
+keyproperties/
+pom.xml.tag
