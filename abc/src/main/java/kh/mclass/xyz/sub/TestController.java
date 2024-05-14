@@ -6,6 +6,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -14,6 +15,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class TestController {
 	@Autowired
 	private TestService testService;
+	
+	@GetMapping("/login")
+	public String login(
+			Model model,
+			String memId
+			) {
+		//model.addAttribute("memberlist",list);
+		return "home";
+	}
 	
 //	@Autowired
 //	private TestDto testDto2;

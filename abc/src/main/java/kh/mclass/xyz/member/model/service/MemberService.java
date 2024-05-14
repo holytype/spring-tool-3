@@ -5,6 +5,7 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import kh.mclass.xyz.member.model.dao.MemberDao;
@@ -16,7 +17,8 @@ public class MemberService {
 	@Autowired
 	private MemberDao memberDao;
 	
-	@Transactional
+	//@Qualifier
+	//@Transactional
 	public List<MemberRes> selectList(){
 		return memberDao.selectList();
 	}

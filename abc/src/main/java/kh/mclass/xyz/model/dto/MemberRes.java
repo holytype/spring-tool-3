@@ -1,33 +1,20 @@
 package kh.mclass.xyz.model.dto;
 
+import lombok.Data;
+//import lombok.AllArgsConstructor;
+//import lombok.Getter;
+//import lombok.NoArgsConstructor;
+//import lombok.Setter;
+//import lombok.ToString;
+
+@Data
+//@ToString
+//@AllArgsConstructor
+//@NoArgsConstructor
+//@Getter
+//@Setter
 public class MemberRes {
 	private String memId;
 	private String memPwd;
 	private String memEmail;
-	@Override
-	public String toString() {
-		return "MemberRes [memId=" + memId + ", memPwd=" + memPwd + ", memEmail=" + memEmail + "]";
-	}
-	public MemberRes() {
-		super();
-	}
-	public String getMemId() {
-		return memId;
-	}
-	public void setMemId(String memId) {
-		this.memId = memId;
-	}
-	public String getMemPwd() {
-		return memPwd;
-	}
-	public void setMemPwd(String memPwd) {
-		this.memPwd = memPwd;
-	}
-	public String getMemEmail() {
-		return memEmail;
-	}
-	public void setMemEmail(String memEmail) {
-		this.memEmail = memEmail;
-	}
-	
 }
